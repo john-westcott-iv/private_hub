@@ -1,0 +1,11 @@
+---
+- name: Test my collection
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  collections:
+    - john_westcott.my_collection
+
+  tasks:
+    - include_role:
+        name: say_hello
